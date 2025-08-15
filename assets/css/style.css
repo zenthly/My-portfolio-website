@@ -230,7 +230,11 @@ body.dark-mode .projects {
     gap: 10px;
     margin-top: 10px;
   }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px
+  
+   .profile-pic {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  }
