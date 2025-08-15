@@ -274,4 +274,52 @@ body.dark-mode .projects {
   visibility: hidden;
   opacity: 0;
 }
+.profile-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+.location {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.profile-links a {
+  margin: 0 10px;
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
 
