@@ -277,3 +277,38 @@ body.dark-mode .projects {
   font-size: 0.9rem;
   color: #777;
 }
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode .btn,
+body.dark-mode button {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .projects {
+  background-color: #1a1a1a;
+}
+
+/* Dark Mode Toggle Button */
+#darkToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
