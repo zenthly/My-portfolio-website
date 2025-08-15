@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Not Found</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="text-center" style="padding: 100px;">
+  <h1>Oops! Page not found.</h1>
+  <p>But don’t worry, Sezibera’s got you covered.</p>
+  <a href="/" class="btn btn-primary">Go back home</a>
+  <script>
+    // Dark Mode Toggle
+document.getElementById('darkToggle').addEventListener('change', () => {
+  document.body.classList.toggle('bg-dark');
+  document.body.classList.toggle('text-white');
+});
+
+// Language Switcher
+function switchLang(lang) {
+  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+  document.querySelectorAll('.lang-rw').forEach(el => el.style.display = lang === 'rw' ? 'block' : 'none');
+}
+
+  </script>
+</body>
+</html>
