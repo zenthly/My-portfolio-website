@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sezibera Obed | Full-Stack Developer</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <img src="assets/img/profile.jpg" alt="Sezibera Obed Headshot">
-  <a href="resume/sezibera-obed-resume.pdf" download class="btn">Download Resume</a>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sezibera Obed | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
+  <!-- 🔘 Dark Mode Toggle -->
+  <button id="darkToggle">🌚/💡</button>
+
+  <!-- 🧭 Navigation -->
   <header>
-    <nav>
-      <h1>Obed.dev</h1>
-      <ul>
+    <nav class="navbar container">
+      <h1 class="logo">Obed.dev</h1>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -22,18 +24,56 @@
     </nav>
   </header>
 
-<section id="hero">
-  <img src="assets/img/profile.jpg" alt="Sezibera Obed Headshot">
-  <h1>Sezibera Obed</h1>
-  <h2>Full-Stack Developer Passionate About Creating Digital Solutions</h2>
-  <p>I build secure, scalable web applications using Node.js, MySQL, and modern frontend tools.</p>
-  <a href="projects.html" class="btn">View My Work</a>
-  <a href="resume/sezibera-obed-resume.pdf" download class="btn">Download Resume</a>
-  <div class="social">
-    <a href="https://github.com/zenthly" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/sezibera" target="_blank">LinkedIn</a>
-  </div>
-</section>
+  <!-- 🖼️ Hero Section -->
+  <section class="hero container" id="about">
+  <img src="assets/images/sezibera-headshot2.jpg" alt="Sezibera Obed" class="headshot" style="width: 150px; border-radius: 50%;" />
+    <h1>Sezibera Obed</h1>
+    <p>Full-Stack Developer Passionate About Creating Digital Solutions</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="resume/sezibera-obed-resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- 📦 Projects Section -->
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Inventory App</h3>
+        <p>Built with Node.js and MySQL to manage stock in real-time.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive site built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Chat App</h3>
+        <p>Realtime messaging using Socket.io and Express.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📬 Contact Section -->
+  <section id="contact" class="contact container">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- 📄 Footer -->
+  <footer>
+    © 2025 Sezibera Obed. All rights reserved.
+  </footer>
+
+  <!-- 🌙 Dark Mode Script -->
+  <script>
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 
 </body>
 </html>
