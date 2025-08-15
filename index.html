@@ -2,134 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sezibera Obed | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <base href="https://zenthly.github.io/My-portfolio-website/">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sezibera Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-  <!-- 🔘 Dark Mode Toggle -->
-  <button id="darkToggle">🌚/💡</button>
-
-  <!-- 🧭 Navigation -->
-  <header>
-    <nav class="navbar container">
-      <h1 class="logo">Obed.dev</h1>
-      <ul class="nav-links">
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume/sezibera-obed-resume.pdf" download>Download CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- 🌐 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">SEZIBERA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- 🧑‍💼 Profile Section -->
-  <section id="profile" class="profile-section">
-    <div class="profile-container">
-      <img src="assets/images/sezibera-headshot2.jpg" alt="Sezibera Obed" class="profile-pic" />
+  <section id="profile" class="py-5 text-center bg-light">
+    <div class="container">
+      <img src="images/sezibera-headshot2.jpg" class="rounded-circle mb-3" width="150" alt="Sezibera" />
       <h1>Sezibera Obed</h1>
-      <p class="title">Full-Stack Developer</p>
-      <p class="location">📍 Kigali, Rwanda</p>
-      <p class="bio">
-        Passionate about building scalable digital solutions that solve real-world problems.
-        Experienced in both frontend and backend development, with a focus on clean code and user-centered design.
-      </p>
-      <div class="profile-links">
-        <a href="https://github.com/zenthly" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/sezibera" target="_blank">LinkedIn</a>
-        <a href="resume/sezibera-obed-resume.pdf" download>Download CV</a>
+      <p class="lead">Full-Stack Developer based in Rwanda 🇷🇼</p>
+    </div>
+  </section>
+
+  <!-- 🎨 Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills & Technologies</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Frontend Development</h4>
+          <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React.js <em>(if completed React task)</em></li>
+            <li>Bootstrap, Responsive Design</li>
+            <li>UI/UX Principles</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Backend Development</h4>
+          <ul>
+            <li>Node.js or PHP</li>
+            <li>RESTful APIs</li>
+            <li>Database Integration</li>
+            <li>Server Configuration</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Database Management</h4>
+          <ul>
+            <li>MySQL, SQL Queries</li>
+            <li>Database Design & Normalization</li>
+            <li>Data Modeling</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Tools & Workflow</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code / IDE proficiency</li>
+            <li>Agile Methodologies</li>
+            <li>Testing & Debugging</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-  <section id="skills" class="skills-section">
-  <h2>Skills & Technologies</h2>
-
-  <div class="skill-category">
-    <h3>Frontend Development</h3>
-    <ul>
-      <li>HTML5, CSS3, JavaScript (ES6+)</li>
-      <li>✅ React.js <span class="note">(if completed React task)</span></li>
-      <li>🎨 Bootstrap, Responsive Design</li>
-      <li>🧠 UI/UX Principles</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Backend Development</h3>
-    <ul>
-      <li>Node.js or PHP (based on your choice)</li>
-      <li>RESTful APIs</li>
-      <li>Database Integration</li>
-      <li>Server Configuration</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Database Management</h3>
-    <ul>
-      <li>MySQL, SQL Queries</li>
-      <li>Database Design & Normalization</li>
-      <li>Data Modeling</li>
-      <li>Performance Optimization</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Tools & Workflow</h3>
-    <ul>
-      <li>Git & GitHub</li>
-      <li>VS Code / IDE proficiency</li>
-      <li>Agile Methodologies</li>
-      <li>Testing & Debugging</li>
-    </ul>
-  </div>
-</section>
-
-
 
   <!-- 📦 Projects Section -->
-  <section id="projects" class="projects container">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Inventory App</h3>
-        <p>Built with Node.js and MySQL to manage stock in real-time.</p>
-      </div>
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive site built with HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="card">
-        <h3>Chat App</h3>
-        <p>Realtime messaging using Socket.io and Express.</p>
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Inventory App</h5>
+              <p class="card-text">Built with Node.js and MySQL to manage stock in real-time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">Responsive site built with HTML, CSS, and Bootstrap.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Chat App</h5>
+              <p class="card-text">Realtime messaging using Socket.io and Express.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 📬 Contact Section -->
-  <section id="contact" class="contact container">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- 📄 Footer -->
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     © 2025 Sezibera Obed. All rights reserved.
   </footer>
 
-  <!-- 🌙 Dark Mode Script -->
-  <script>
-    document.getElementById('darkToggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
