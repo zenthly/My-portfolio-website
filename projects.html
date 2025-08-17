@@ -19,11 +19,33 @@
     <title>My Projects</title>
 </head>
 <body>
-   <div class="btn-group mb-4" role="group">
-  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
-  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
-  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+<div class="col-md-4 project web">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+      <p class="card-text">Responsive site built with HTML, CSS, and Bootstrap.</p>
+    </div>
+  </div>
 </div>
+
+<div class="col-md-4 project mobile">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Chat App</h5>
+      <p class="card-text">Realtime messaging using Socket.io and Express.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 project web">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Inventory App</h5>
+      <p class="card-text">Built with Node.js and MySQL to manage stock in real-time.</p>
+    </div>
+  </div>
+</div>
+
 <script>
   function filterProjects(category) {
     const projects = document.querySelectorAll('.project');
