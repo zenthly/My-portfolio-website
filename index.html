@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
   <!-- Head -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script type="application/ld+json">
@@ -76,6 +76,41 @@ body {
 }
 
 .whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+    .telegram-float {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #0088cc;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.telegram-float:hover {
+  transform: scale(1.1);
+}
+.messenger-float {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  background-color: #0078ff;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.messenger-float:hover {
   transform: scale(1.1);
 }
 
@@ -177,8 +212,8 @@ body {
     <section id="contact" class="glass text-dark py-5">
   <div class="container text-center">
     <h2 class="mb-4">Contact Me</h2>
-    <p><strong>Email:</strong> sezibera@example.com</p>
-    <p><strong>Phone:</strong> +250 788 123 456</p>
+    <p><strong>Email:</strong> seziberaobed4@gmail.com</p>
+    <p><strong>Phone:</strong> +250 795 503 057</p>
     <div class="social-icons mt-4">
       <a href="https://twitter.com/sezibera" target="_blank" class="mx-2">
         <i class="fab fa-twitter fa-2x"></i>
@@ -186,20 +221,20 @@ body {
       <a href="https://www.linkedin.com/in/sezibera" target="_blank" class="mx-2">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://github.com/sezibera" target="_blank" class="mx-2">
+      <a href="https://github.com/zenthly" target="_blank" class="mx-2">
         <i class="fab fa-github fa-2x"></i>
       </a>
-      <a href="https://www.instagram.com/sezibera" target="_blank" class="mx-2">
+      <a href="https://www.instagram.com/sezibera_rw" target="_blank" class="mx-2">
         <i class="fab fa-instagram fa-2x"></i>
       </a>
-      <a href="https://wa.me/250788123456" target="_blank" class="mx-2">
+      <a href="https://wa.me/250795503057" target="_blank" class="mx-2">
         <i class="fab fa-whatsapp fa-2x"></i>
       </a>
     </div>
   </div>
 </section>
 
-    <a href="https://wa.me/250788123456" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/250795503057" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -207,6 +242,13 @@ body {
 <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#emailModal">
   📧 Email Me
 </button>
+    <a href="https://t.me/yourTelegramUsername" class="telegram-float" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+<a href="https://m.me/yourPageUsername" class="messenger-float" target="_blank">
+  <i class="fab fa-facebook-messenger"></i>
+</a>
+
 
 <!-- Modal -->
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
@@ -218,15 +260,28 @@ body {
       </div>
       <div class="modal-body">
         <form>
-          <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-          <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-          <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+          <input type="text" class="form-control mb-3" placeholder="sezibera obed" required>
+          <input type="email" class="form-control mb-3" placeholder="seziberaobed4@gmail.com" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="HeHello 👋,How can help you?" required></textarea>
           <button type="submit" class="btn btn-primary w-100">Send</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/DEFAULT';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 
   <!-- 🎨 Skills Section -->
