@@ -19,36 +19,24 @@
     <title>My Projects</title>
 </head>
 <body>
-   <section id="projects">
-  <h2>My Projects</h2>
+   <div class="btn-group mb-4" role="group">
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+</div>
+<script>
+  function filterProjects(category) {
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+      if (category === 'all' || project.classList.contains(category)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  }
+</script>
 
-  <div class="project">
-    <h3>Backend API Development</h3>
-    <p>RESTful API built with Node.js, Express, and MySQL. Includes user authentication, CRUD operations, and JWT security.</p>
-    <ul>
-      <li>Technologies: Node.js, Express, MySQL, JWT</li>
-      <li><a href="https://github.com/zenthly/user-management-api" target="_blank">GitHub Repo</a></li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>Professional Landing Page</h3>
-    <p>Responsive landing page built with HTML, CSS, and Bootstrap. Designed for mobile-first experience.</p>
-    <ul>
-      <li>Technologies: HTML5, CSS3, Bootstrap</li>
-      <li><a href="https://your-landing-page.netlify.app" target="_blank">Live Demo</a></li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>JavaScript Interactive Apps</h3>
-    <p>Includes a To-Do App and Weather Dashboard using DOM manipulation and API integration.</p>
-    <ul>
-      <li>Technologies: JavaScript, HTML, CSS</li>
-      <li><a href="https://weather-widget-dash.netlify.app" target="_blank">Live Demo</a></li>
-    </ul>
-  </div>
-</section>
  
 </body>
 </html>
