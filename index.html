@@ -31,14 +31,26 @@
 </script>
 
   <style>
-  /* Paste mirror background and glass effect here */
-    .glass {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    .project {
+  transition: all 0.3s ease-in-out;
 }
+body {
+  background-image: url('images/kigali-skyline-on-a-sunny-summer-day-with-blue-skies.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+    .glass {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
 </style>
 
 </head>
@@ -80,7 +92,7 @@
 </script>
 
 
-  <section class="bg-dark text-white text-center py-5">
+  <section class="glass text-center text-white py-5">
   <div class="container">
     <h1 class="display-3">Hello, I'm <span class="text-warning">Sezibera</span></h1>
     <p class="lead">I build beautiful and functional web experiences</p>
@@ -88,14 +100,15 @@
   </div>
 </section>
 <section id="projects" class="py-5">
-  <div class="container text-center" class="glass">
-    <h2 class="mb-4">My Projects</h2>
-    <div class="btn-group mb-4" role="group">
-      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
-<button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
-<button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+  <div class="container glass text-dark">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <!-- project cards here -->
+  <div class="btn-group mb-4" role="group">
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
+  <button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+</div>
 
-    </div>
     <div class="card project web">
   <!-- Web project content -->
 </div>
@@ -120,23 +133,6 @@
   }
 </script>
 
-
-  <!-- Add this in navbar -->
-<div class="form-check form-switch text-white ms-auto">
-  <input class="form-check-input" type="checkbox" id="darkModeToggle">
-  <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
-</div>
-
-<!-- Add this JS -->
-<script>
-  const toggle = document.getElementById('darkModeToggle');
-  toggle.addEventListener('change', () => {
-    document.body.classList.toggle('bg-dark');
-    document.body.classList.toggle('text-white');
-  });
-</script>
-
-
   <!-- 🧑‍💼 Profile Section -->
   <section id="profile" class="py-5 text-center bg-light">
     <div class="container">
@@ -145,7 +141,10 @@
       <p class="lead">Full-Stack Developer based in Rwanda 🇷🇼</p>
     </div>
   </section>
-  
+  <div class="glass" data-aos="fade-up">
+  <!-- content -->
+</div>
+
 
   <!-- 🎨 Skills Section -->
   <section id="skills" class="py-5">
@@ -193,37 +192,33 @@
   </section>
 
   <!-- 📦 Projects Section -->
-  <section id="projects" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Inventory App</h5>
-              <p class="card-text">Built with Node.js and MySQL to manage stock in real-time.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Website</h5>
-              <p class="card-text">Responsive site built with HTML, CSS, and Bootstrap.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Chat App</h5>
-              <p class="card-text">Realtime messaging using Socket.io and Express.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="col-md-4 project web">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+      <p class="card-text">Responsive site built with HTML, CSS, and Bootstrap.</p>
     </div>
-  </section>
+  </div>
+</div>
+
+<div class="col-md-4 project mobile">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Chat App</h5>
+      <p class="card-text">Realtime messaging using Socket.io and Express.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 project web">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Inventory App</h5>
+      <p class="card-text">Built with Node.js and MySQL to manage stock in real-time.</p>
+    </div>
+  </div>
+</div>
+
 
   <!-- 📬 Contact Section -->
   <section id="contact" class="py-5">
