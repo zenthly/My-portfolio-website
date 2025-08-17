@@ -91,10 +91,35 @@
   <div class="container text-center" class="glass">
     <h2 class="mb-4">My Projects</h2>
     <div class="btn-group mb-4" role="group">
-      <button type="button" class="btn btn-outline-primary">All</button>
-      <button type="button" class="btn btn-outline-primary">Web</button>
-      <button type="button" class="btn btn-outline-primary">Mobile</button>
+      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
+<button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
+<button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+
     </div>
+    <div class="card project web">
+  <!-- Web project content -->
+</div>
+
+<div class="card project mobile">
+  <!-- Mobile project content -->
+</div>
+
+<div class="card project all">
+  <!-- Project that belongs to both -->
+</div>
+<script>
+  function filterProjects(category) {
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+      if (category === 'all' || project.classList.contains(category)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  }
+</script>
+
 
   <!-- Add this in navbar -->
 <div class="form-check form-switch text-white ms-auto">
