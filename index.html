@@ -35,7 +35,7 @@
    <!-- 🌐 Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">SEZIBERA</a>
+      <a class="navbar-brand" href="#">WELCOME TO MY PORTFOLIO WEBSITE 📑</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,27 +49,9 @@
       </div>
     </div>
   </nav>
-  <!-- 🔘 Dark Mode Toggle -->
-  <button id="darkToggle">🌚/💡</button>  <!-- Navbar toggle -->
-<div class="form-check form-switch ms-auto text-white">
-  <input class="form-check-input" type="checkbox" id="darkToggle">
-  <label class="form-check-label" for="darkToggle">Dark Mode</label>
-</div>
-
-<!-- JS -->
-<script>
-  const toggle = document.getElementById('darkToggle');
-  toggle.addEventListener('change', () => {
-    document.body.classList.toggle('bg-dark');
-    document.body.classList.toggle('text-white');
-  });
-</script>
-
-  <!-- Navbar -->
-<div class="dropdown ms-3">
-  <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    Language
-  </button>
+  <div>
+<div class="background"></div>
+    <div class="content"></div>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#" onclick="switchLang('en')">English</a></li>
     <li><a class="dropdown-item" href="#" onclick="switchLang('rw')">Kinyarwanda</a></li>
@@ -102,20 +84,6 @@
       <button type="button" class="btn btn-outline-primary">Web</button>
       <button type="button" class="btn btn-outline-primary">Mobile</button>
     </div>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card shadow-sm">
-          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">E-commerce Platform</h5>
-            <p class="card-text">Built with React and Firebase</p>
-          </div>
-        </div>
-      </div>
-      <!-- Add more cards here -->
-    </div>
-  </div>
-</section>
 
   <!-- Add this in navbar -->
 <div class="form-check form-switch text-white ms-auto">
