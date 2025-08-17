@@ -6,6 +6,9 @@
   <title>Sezibera Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Head -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script type="application/ld+json">
@@ -48,6 +51,32 @@ body {
   padding: 30px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
 
 
@@ -143,6 +172,60 @@ body {
   </section>
   <div class="glass" data-aos="fade-up">
   <!-- content -->
+</div>
+
+    <section id="contact" class="glass text-dark py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Contact Me</h2>
+    <p><strong>Email:</strong> sezibera@example.com</p>
+    <p><strong>Phone:</strong> +250 788 123 456</p>
+    <div class="social-icons mt-4">
+      <a href="https://twitter.com/sezibera" target="_blank" class="mx-2">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sezibera" target="_blank" class="mx-2">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/sezibera" target="_blank" class="mx-2">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/sezibera" target="_blank" class="mx-2">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://wa.me/250788123456" target="_blank" class="mx-2">
+        <i class="fab fa-whatsapp fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <a href="https://wa.me/250788123456" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Trigger Button -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#emailModal">
+  📧 Email Me
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content glass">
+      <div class="modal-header">
+        <h5 class="modal-title" id="emailModalLabel">Send Me an Email</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 
