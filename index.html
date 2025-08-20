@@ -143,7 +143,7 @@ header img {
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/sezibera-logo.jpg" alt="Sezibera Logo" width="40" height="40" class="me-2 rounded-circle">
+      <img src="images/obed.jpg" alt="obed" width="40" height="40" class="me-2 rounded-circle">
       <span>Sezibera Obed</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -187,57 +187,6 @@ header img {
     <a href="#projects" class="btn btn-outline-light mt-3">View My Work</a>
   </div>
 </section>
-<section id="projects" class="py-5">
-  <div class="container glass text-dark">
-    <h2 class="text-center mb-4">My Projects</h2>
-    <div class="btn-group mb-4" role="group">
-      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
-      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
-      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
-    </div>
-
-    <div class="row" id="projectGrid">
-      <!-- Example Web Project -->
-      <div class="col-md-4 mb-4 project-card" data-category="web">
-        <div class="card h-100">
-          <img src="images/web-project1.jpg" class="card-img-top" alt="Web Project">
-          <div class="card-body">
-            <h5 class="card-title">Portfolio Website</h5>
-            <p class="card-text">A responsive personal portfolio built with HTML, CSS, and Bootstrap.</p>
-            <a href="https://github.com/zenthly/portfolio" class="btn btn-outline-primary">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Example Mobile Project -->
-      <div class="col-md-4 mb-4 project-card" data-category="mobile">
-        <div class="card h-100">
-          <img src="images/Sezibera_logo.jpg" class="card-img-top" alt="Mobile App">
-          <div class="card-body">
-            <h5 class="card-title">Todo App</h5>
-            <p class="card-text">A Flutter-based mobile app for managing daily tasks efficiently.</p>
-            <a href="https://github.com/zenthly/todo-app" class="btn btn-outline-primary">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-function filterProjects(category) {
-  const cards = document.querySelectorAll('.project-card');
-  cards.forEach(card => {
-    if (category === 'all' || card.dataset.category === category) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
-  });
-}
-</script>
-
-
   <!-- 🧑‍💼 Profile Section -->
  <section class="glass py-5 text-white">
   <div class="container">
@@ -263,7 +212,6 @@ function filterProjects(category) {
   <div class="glass" data-aos="fade-up">
   <!-- content -->
 </div>
-
     
     <a href="https://wa.me/250795503057" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp">whatsapp</i>
@@ -345,6 +293,56 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
       </div>
     </div>
+
+    <section id="projects" class="py-5">
+  <div class="container glass text-dark">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="btn-group mb-4" role="group">
+      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('all')">All</button>
+      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('web')">Web</button>
+      <button type="button" class="btn btn-outline-primary" onclick="filterProjects('mobile')">Mobile</button>
+    </div>
+
+    <div class="row" id="projectGrid">
+      <!-- Example Web Project -->
+      <div class="col-md-4 mb-4 project-card" data-category="web">
+        <div class="card h-100">
+          <img src="images/web-project1.jpg" class="card-img-top" alt="Web Project">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">A responsive personal portfolio built with HTML, CSS, and Bootstrap.</p>
+            <a href="https://github.com/zenthly/portfolio" class="btn btn-outline-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example Mobile Project -->
+      <div class="col-md-4 mb-4 project-card" data-category="mobile">
+        <div class="card h-100">
+          <img src="images/Sezibera_logo.jpg" class="card-img-top" alt="Mobile App">
+          <div class="card-body">
+            <h5 class="card-title">Todo App</h5>
+            <p class="card-text">A Flutter-based mobile app for managing daily tasks efficiently.</p>
+            <a href="https://github.com/zenthly/todo-app" class="btn btn-outline-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
  
      <section id="contact" class="glass text-dark py-5">
   <div class="container">
