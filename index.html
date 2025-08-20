@@ -98,39 +98,18 @@ body {
   transform: scale(1.1);
 }
 
-    .telegram-float {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  background-color: #0088cc;
+ .mirror-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: white;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 24px;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  padding: 60px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.telegram-float:hover {
-  transform: scale(1.1);
-}
-.messenger-float {
-  position: fixed;
-  bottom: 160px;
-  right: 20px;
-  background-color: #0078ff;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 24px;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-.messenger-float:hover {
-  transform: scale(1.1);
+.mirror-section h2, .mirror-section li {
+  text-align: center;
+  font-weight: bold;
 }
 header img {
   border-radius: 10px;
@@ -251,7 +230,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 
   <!-- 🎨 Skills Section -->
-  <section id="skills" class="bg-dark text-white py-5">
+  <section id="skills" class="mirror-section">
     <div class="container">
       <h2 class="text-center mb-4">Skills & Technologies</h2>
       <div class="row">
