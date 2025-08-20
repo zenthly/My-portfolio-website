@@ -15,6 +15,8 @@
 
   <!-- Head -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -377,10 +379,16 @@ s0.parentNode.insertBefore(s1,s0);
           <textarea name="message" class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
 
           <!-- reCAPTCHA -->
-          <div class="g-recaptcha mb-3" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+          <div class="g-recaptcha mb-3" data-sitekey="6LdIfKwrAAAAANMrPHpy8F_RNlGAQNd-cw-yJKhL"></div>
 
           <button type="submit" class="btn btn-primary w-100">Send Message</button>
         </form>
+        <form action="..." method="POST">
+  <!-- Fields za form -->
+  <div class="g-recaptcha" data-sitekey="6LdIfKwrAAAAANMrPHpy8F_RNlGAQNd-cw-yJKhL"></div>
+  <button type="submit">Send</button>
+</form>
+
 
         <!-- Confirmation Message -->
         <div id="confirmation" style="display:none; color:green; margin-top:15px; text-align:center;">
