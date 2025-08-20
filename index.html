@@ -259,7 +259,7 @@ function filterProjects(category) {
 
     
     <a href="https://wa.me/250795503057" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
+  <i class="fab fa-whatsapp">whatsapp</i>
 </a>
   <!-- Modal -->
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
@@ -340,8 +340,7 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
   </section>
 
- <!-- 📬 Contact Section -->
-<section id="contact" class="glass text-dark py-5">
+ <section id="contact" class="glass text-dark py-5">
   <div class="container">
     <h2 class="text-center mb-5">Contact Me</h2>
     <div class="row">
@@ -372,22 +371,50 @@ s0.parentNode.insertBefore(s1,s0);
 
       <!-- Right Column: Contact Form -->
       <div class="col-md-6">
-        <form action="https://formspree.io/f/yourFormID" method="POST" class="bg-light p-4 rounded shadow-sm">
-          <div class="mb-3">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
-          </div>
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
-          </div>
-          <div class="mb-3">
-            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
-          </div>
+        <form id="contact-form" action="https://formspree.io/f/mqkwxyz" method="POST" class="bg-light p-4 rounded shadow-sm">
+          <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea name="message" class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
+
+          <!-- reCAPTCHA -->
+          <div class="g-recaptcha mb-3" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+
           <button type="submit" class="btn btn-primary w-100">Send Message</button>
         </form>
+
+        <!-- Confirmation Message -->
+        <div id="confirmation" style="display:none; color:green; margin-top:15px; text-align:center;">
+          ✅ Message sent! Thank you for reaching out.
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Scripts -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  const form = document.getElementById('contact-form');
+  const confirmation = document.getElementById('confirmation');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        confirmation.style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    });
+  });
+</script>
+
 
 <div class="glass" data-aos="fade-up">
   <!-- content -->
