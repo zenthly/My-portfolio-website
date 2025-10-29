@@ -441,20 +441,26 @@ function filterProjects(category) {
       </div>
 
       <!-- CV Download -->
-      <div class="col-md-4 mb-4">
-        <h5>📄 Download My CV</h5>
-        <p>Want to work together? Grab my resume below.</p>
-        <div class="dropdown">
-          <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            Choose Format
-          </button>
-          <a href="resume/sezibera-cv.pdf" class="btn btn-outline-light" download>📄 Download My CV (PDF)</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="resume/sezibera-cv.pdf" download>PDF Version</a></li>
-            <li><a class="dropdown-item" href="resume/sezibera-cv.docx" download>Word Version</a></li>
-          </ul>
-        </div>
-      </div>
+<div class="col-md-4 mb-4">
+  <h5>📄 Download My CV</h5>
+  <p>Want to work together? Grab my resume below.</p>
+
+  <!-- Direct Download Button -->
+  <a href="resume/sezibera-cv.pdf" class="btn btn-outline-light mb-2" download>
+    📄 Download My CV (PDF)
+  </a>
+
+  <!-- Dropdown for Format Selection -->
+  <div class="dropdown">
+    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Choose Format
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="resume/sezibera-cv.pdf" download>📄 PDF Version</a></li>
+      <li><a class="dropdown-item" href="resume/sezibera-cv.docx" download>📝 Word Version</a></li>
+    </ul>
+  </div>
+</div>
 
       <!-- Social Media -->
       <div class="col-md-4 mb-4">
