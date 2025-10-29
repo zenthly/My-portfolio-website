@@ -1,1 +1,25 @@
-<a href="resume/sezibera-cv.pdf" class="btn btn-outline-light" download>📄 Download My CV (PDF)</a>
+<!-- 📄 Download My CV -->
+<div class="col-md-4 mb-4">
+  <h5>📄 Download My CV</h5>
+  <p>Want to work together? Grab my resume below.</p>
+
+  <!-- Main Download Buttons -->
+  <div class="d-flex flex-column gap-2">
+    <a href="resume/sezibera-cv.pdf" download class="btn btn-outline-light">
+      📄 Download CV (PDF)
+    </a>
+    <a href="resume/sezibera-cv.docx" download class="btn btn-outline-light">
+      📝 Download CV (Word)
+    </a>
+
+
+<script>
+  document.querySelectorAll('a[download]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      alert('📥 Your CV download will start shortly...');
+    });
+  });
+</script>
+
+  </div>
+</div>
