@@ -5,12 +5,11 @@
 
   <!-- Main Download Buttons -->
   <div class="d-flex flex-column gap-2">
-    <a href="resume/sezibera-cv.pdf" download class="btn btn-outline-light">
-      📄 Download CV (PDF)
-    </a>
-    <a href="resume/sezibera-cv.docx" download class="btn btn-outline-light">
-      📝 Download CV (Word)
-    </a>
+    <a href="https://zenthly.github.io/My-portfolio-website/resume/sezibera-cv.pdf" 
+   class="btn btn-outline-light" 
+   download>
+   📄 Download My CV (PDF)
+</a>
 <script>
   document.querySelectorAll('a[download]').forEach(btn => {
     btn.addEventListener('click', () => {
